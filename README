@@ -1,0 +1,31 @@
+#Sistema de cadastro de produtos. 
+
+#Antes de usar, deve criar um banco de dados em mysql chamado impacta e fazer as devidas correcoes no arquivo conecta.php, lá é possivel alterar usuario e senha, e o nome do banco se desejar. 
+
+mysql -uroot -p
+
+CREATE DATABASE impacta;
+
+USE impacta;
+
+#Após criar o banco, criar a tabela:
+create table produto(
+    titulo varchar(30),
+    categoria num,
+    marca varchar(30),
+    descricao text,
+    valor double 
+);
+
+#Se desejar, pode fazer algumas inserções prévias 
+INSERT INTO produto (titulo, categoria, marca, descricao, valor) VALUES ('Goiabada', '3','Goiabas & Cia', 'doce', '3.85');
+INSERT INTO produto (titulo, categoria, marca, descricao, valor) VALUES ('Alface', '1','Vegetal', 'Verdura', '1');
+INSERT INTO produto (titulo, categoria, marca, descricao, valor) VALUES ('Iogurte', '2','Danone', 'Bebida láctea', '6.8');
+INSERT INTO produto (titulo, categoria, marca, descricao, valor) VALUES ('Mirabel', '2','Woffer', 'biscoito', '3.14');
+INSERT INTO produto (titulo, categoria, marca, descricao, valor) VALUES ('Vela', '3','Pyro', 'fogo', '1');
+
+
+Apos configurar o banco, acesse em http://localhost/Mercado
+
+Modo de usar: a tela inicial apresenta os produtos existentes na loja. Para mais detelhes, basta clicar no produto. 
+Também é possível fazer inclusão de novos produtos, bem como alterações em produtos existentes ou exclusões, conforme botões. 

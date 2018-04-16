@@ -1,0 +1,30 @@
+Pré-requisitos:
+- Padrão MVC
+- PHP Orientado a Objetos
+- Banco de dados MySQL
+- Template com biblioteca Smarty (https://www.smarty.net/)
+- HTML com Bootstrap CSS (http://getbootstrap.com/)
+- Controle de versão com o Git e publicar no Github (https://github.com/)
+
+Dados que precisamos armazenar:
+- Título do produto
+- Categoria
+- Marca
+- Descrição
+- Foto (JPG, GIF, PNG)
+- Valor
+
+Páginas:
+
+- FrontEnd
+	- Lista de produtos
+		- botão "mais informações"
+	- Dados do produto
+		- Todos os dados armazenados no banco de dados
+
+- BackEnd
+	- Lista de produtos 
+		- botões adicionar/alterar/remover
+		- Paginação
+	- Cadastro de produtos
+	- Alteração de produtos
